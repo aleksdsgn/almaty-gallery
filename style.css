@@ -30,6 +30,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: all .5s ease-in-out;
 }
 
 .slide h3 {
@@ -38,4 +39,14 @@ body {
   font-size: 24px;
   bottom: 20px;
   left: 20px;
+  opacity: 0;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity .3 ease-in;
 }
